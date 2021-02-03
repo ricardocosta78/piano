@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="piano">
+      <div class="piano__cima">
+        <div class="piano__colunas"></div>
+        <div class="piano__display">
+          <div class="piano__heading">
+            <h3>EDUARDO COSTA PIANO</h3>
+            <label for="">
+              <input
+                type="radio"
+                name="control"
+                class="piano__control__option"
+                value="letterNotes"
+                checked
+              />Letter Notes
+            </label>
+            <label for="">
+              <input
+                type="radio"
+                name="control"
+                class="piano__control__option"
+                value="keyboard"
+              />Keyboard
+            </label>
+            <label for="">
+              <input
+                type="radio"
+                name="control"
+                class="piano__control__option"
+                value="none"
+              />None
+            </label>
+          </div>
+          <div class="auto__play">
+            <h4>Autoplay</h4>
+
+            <select class="piano__song-list">
+              <option value="1">Jingle Bells</option>
+              <option value="2">Happy Birthday</option>
+            </select>
+
+            <label
+              >Tempo:
+              <select class="piano__tempo">
+                <option value="1">Slow</option>
+                <option value="2" selected>Normal</option>
+                <option value="3">Fast</option>
+              </select>
+            </label>
+            <button class="piano__play-btn">Play</button>
+          </div>
+        </div>
+        <div class="piano__colunas"></div>
+      </div>
+      <div class="piano__keyboard">
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

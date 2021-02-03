@@ -1,0 +1,107 @@
+* {
+ 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.piano {
+  width: 1300px;
+  height: 600px;
+  background-color: #1a1a1a;
+  border-radius: 60px 60px 10px 10px;
+  padding: 5px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-between;
+}
+.piano__cima {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 60px 60px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.piano__colunas {
+  width: 25%;
+  height: 70%;
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+  box-shadow: 1px 0 0 1px #c3c3c3;
+  border-radius: 10px;
+}
+.piano__display {
+  width: 30%;
+  height: 70%;
+  border-radius: 17px;
+  background: #e0e0e0;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  box-shadow: inset 9px 9px 18px #777777, inset -9px -9px 18px #ffffff;
+  text-align: center;
+}
+.piano__display h3{
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 4px 0 #242424, 0 5px 0 #222;
+    color: #e0dfdc;
+    background: #556677;
+}
+
+.piano__keyboard {
+  width: 100%;
+  height:100%;
+  display: flex;
+  background-color: black;
+}
+.piano__key {
+  width: 30px;
+  height: 100%;
+  padding: 0;
+  margin: 0 1px;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  flex-grow: 1;
+  border-radius: 0 0 10px 10px;
+}
+.piano__key-branca {
+  padding-top: 15%;
+}
+
+.piano__key-preta {
+  background-color: black;
+  color: white;
+  height: 60%;
+  position: absolute;
+  left: -15px;
+  top:0;
+}
+.empty-space {
+  position: relative;
+}
+
+.piano__key-playing{
+    background:#6eb7bf;
+    border-radius:0 0 10px 10px;
+}

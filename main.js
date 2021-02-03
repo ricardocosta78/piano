@@ -1,7 +1,7 @@
 let keyboard = document.querySelector('.piano__keyboard');
 let controls = document.querySelectorAll('.piano__control__option')
 let pianoNotes = ['C','D','E','F','G','A','B'];
-let keyboardMap = ['1','2','3','4','5','6','7','8','9','0','Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','I','J','K','L','Z','X','C','V','B','N']
+let keyboardMap = ['1','2','3','4','5','6','7','8','9','0','Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','Z','X','C','V','B','N']
 let keys=[];
 let playBtn = document.querySelector('.piano__play-btn');
 let tempoSelect = document.querySelector('.piano__tempo');
